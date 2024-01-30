@@ -1,0 +1,79 @@
+.career-bg{
+    width: 50%;
+}
+
+.career-bg img{
+    width: 120%;
+    box-shadow: 1px 17px 50px 0px #868686;
+}
+
+.career-desc{
+    padding-left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5%;
+}
+
+.career-subtitle{
+    color:#6046FF ;
+}
+
+.career-form{
+    margin: 5% 10%;
+    padding: 1% 5%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 50px;
+    box-shadow: 0px 4px 100px 0px #DFDFDF;
+
+}
+
+.career-form h3{
+    width: 17%;
+    margin: 0 auto;
+    color: #29A87A;
+    border-bottom: 2px solid #6046ff;
+    margin-bottom: 2%;
+}
+
+.file{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.career-form input:not(#careerFile), .form-select{
+    border-radius: 25px !important;
+    border:none !important;
+    height: 60px ;
+    margin-bottom: 2%;
+    background: white;
+    box-shadow: 0px 4px 100px rgba(153, 153, 153, 0.30);
+}
+
+.career-form input:not(#careerFile):hover, .form-select:hover,
+.career-form input:not(#careerFile):focus, .form-select:focus{
+    box-shadow: none !important;
+    border: 2px solid #29a87a !important;
+}
+
+#careerFile{
+    height: 200px;
+    padding: 7% 40%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    border: 3px dashed #868686;
+}
+
+.career-form button{
+    background-color: #29A87A;
+    color: white;
+    width: 25%;
+    height: 5vh;
+    margin: 5% auto 0 auto;
+}

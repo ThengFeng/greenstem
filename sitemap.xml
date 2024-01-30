@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.greenstem.com.my/greenstem/index.html</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/icon.webp</image:loc>
+            <image:title>Greenstem Business Software Logo</image:title>
+            <image:caption>
+                Greenstem Business Software Logo
+            </image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://greenstem.com.my/greenstem/product.html</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/icon.webp</image:loc>
+            <image:title>Greenstem Business Software Logo</image:title>
+            <image:caption>
+                Greenstem Business Software Logo
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/Products.png</image:loc>
+            <image:title>Greenstem Business Software's Products </image:title>
+            <image:caption>
+                Overview of Greenstem Business Software's Products
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://greenstem.com.my/greenstem/pic/spare%20parts%20management%20&%20accounting%20system.svg</image:loc>
+            <image:title>Spare Parts Management and Accounting System</image:title>
+            <image:caption>
+                General view of Spare Parts Management and Accounting System
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/Invoice-entry.png</image:loc>
+            <image:title>Invoice Entry</image:title>
+            <image:caption>
+                Billing to customer, customer ledger, quotation and sales or delivery order.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/transaction_detail.png</image:loc>
+            <image:title>Transaction Detail Analysis</image:title>
+            <image:caption>
+                Stock cost, total in and out quantity for the selected period.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/goods_received.png</image:loc>
+            <image:title>Inventory</image:title>
+            <image:caption>
+                Goods Received, stock movement for the item and support excel import or export.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/sales_order.jpg</image:loc>
+            <image:title>Sales Order System</image:title>
+            <image:caption>
+                Check stock information, sales history and send sales order to office via app.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/stock_enquiry.png</image:loc>
+            <image:title>Stock Enquiry</image:title>
+            <image:caption>
+                Search stock and display its quantity, selling price and brand.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://greenstem.com.my/greenstem/pic/workshop%20management%20system.svg</image:loc>
+            <image:title>Workshop Management System</image:title>
+            <image:caption>
+                General view of Workshop Management System
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/Invoice-entry.png</image:loc>
+            <image:title>Workshop Invoice Entry</image:title>
+            <image:caption>
+                Billing to customer and can show in charge, issue personal, datetime.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/vehicle_service_history.jpg</image:loc>
+            <image:title>Vehicle Service Record</image:title>
+            <image:caption>
+                Ability to track service vehicles and their detailed records.
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/vehicle_register.jpg</image:loc>
+            <image:title>Vehicle Register</image:title>
+            <image:caption>
+                Setup registration for each vehicle its information and next service mileage.
+            </image:caption>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://greenstem.com.my/greenstem/about-us.html</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+
+        <image:image>
+            <image:loc>https://www.greenstem.com.my/greenstem/pic/1990-dos.jpg</image:loc>
+            <image:title>Dos-Based System</image:title>
+            <image:caption>
+                System Developed in 1990 using Dos platform
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/2000-windows.png</image:loc>
+            <image:title>Windows-Based System</image:title>
+            <image:caption>
+                System Developed in 2000 using Windows platform
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/2020-web.jpg</image:loc>
+            <image:title>Web-Based System</image:title>
+            <image:caption>
+                System Developed in 2020 using Web platform
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>
+                https://greenstem.com.my/greenstem/pic/june23_group-training-by-Shangdao/logo.jpeg</image:loc>
+            <image:title>Event Poster and Logo</image:title>
+            <image:caption>
+                Group Tarining by Shang Dao
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/Nov23_Miapex-2023/logo.jpg</image:loc>
+            <image:title>Event Poster and Logo</image:title>
+            <image:caption>
+                Miapex 2023
+            </image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://greenstem.com.my/greenstem/pic/sept23_EVM-Asia23/logo.jpg</image:loc>
+            <image:title>Event Poster and Logo</image:title>
+            <image:caption>
+                EVM Asia 2023
+            </image:caption>
+        </image:image>
+    </url>
+
+</urlset>
