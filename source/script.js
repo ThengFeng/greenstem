@@ -191,22 +191,22 @@ document.addEventListener('DOMContentLoaded', function () {
         teamBuildingBtns.forEach(function (button) {
             button.addEventListener('click', initializeFancybox([
                 {
-                    src: "../greenstem/pic/team_building/team_building_1.jfif",
+                    src: "/pic/team_building/team_building_1.jfif",
                     type: "image",
                     caption: "Team Building Event",
                 },
                 {
-                    src: "../greenstem/pic/team_building/team_building_2.jpg",
+                    src: "/pic/team_building/team_building_2.jpg",
                     type: "image",
                     caption: "Team Building Event",
                 },
                 {
-                    src: "../greenstem/pic/team_building/team_building_4.jpg",
+                    src: "/pic/team_building/team_building_4.jpg",
                     type: "image",
                     caption: "Team Building Event",
                 },
                 {
-                    src: "../greenstem/pic/team_building/team_building_6.jpg",
+                    src: "/pic/team_building/team_building_6.jpg",
                     type: "image",
                     caption: "Team Building Event",
                 }
@@ -219,22 +219,22 @@ document.addEventListener('DOMContentLoaded', function () {
         miapex2023GalleryBtns.forEach(function (button) {
             button.addEventListener('click', initializeFancybox([
                 {
-                    src: "../greenstem/pic/Nov23_Miapex-2023/1.jpg",
+                    src: "/pic/Nov23_Miapex-2023/1.jpg",
                     type: "image",
                     caption: "MIAPEX 2023",
                 },
                 {
-                    src: "../greenstem/pic/Nov23_Miapex-2023/2.jpg",
+                    src: "/pic/Nov23_Miapex-2023/2.jpg",
                     type: "image",
                     caption: "MIAPEX 2023",
                 },
                 {
-                    src: "../greenstem/pic/Nov23_Miapex-2023/3.jpg",
+                    src: "/pic/Nov23_Miapex-2023/3.jpg",
                     type: "image",
                     caption: "MIAPEX 2023",
                 },
                 {
-                    src: "../greenstem/pic/Nov23_Miapex-2023/4.jpg",
+                    src: "/pic/Nov23_Miapex-2023/4.jpg",
                     type: "image",
                     caption: "MIAPEX 2023",
                 }
@@ -247,20 +247,20 @@ document.addEventListener('DOMContentLoaded', function () {
         evm2023GalleryButtons.forEach(function (button) {
             button.addEventListener('click', initializeFancybox([
                 {
-                    src: "../greenstem/pic/sept23_EVM-Asia23/1.jpg",
+                    src: "/pic/sept23_EVM-Asia23/1.jpg",
                     type: "image",
                     caption: "EVM 2023",
                 },
                 {
-                    src: "../greenstem/pic/sept23_EVM-Asia23/2.jpg",
+                    src: "/pic/sept23_EVM-Asia23/2.jpg",
                     type: "image",
                     caption: "EVM 2023",
                 }, {
-                    src: "../greenstem/pic/sept23_EVM-Asia23/3.jpg",
+                    src: "/pic/sept23_EVM-Asia23/3.jpg",
                     type: "image",
                     caption: "EVM 2023",
                 }, {
-                    src: "../greenstem/pic/sept23_EVM-Asia23/4.jpg",
+                    src: "/pic/sept23_EVM-Asia23/4.jpg",
                     type: "image",
                     caption: "EVM 2023",
                 }
@@ -272,22 +272,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (gstSeminarButton) {
         gstSeminarButton.addEventListener('click', initializeFancybox([
             {
-                src: "../greenstem/pic/gst-seminar/greenstem (16).jpg",
+                src: "/pic/gst-seminar/greenstem (16).jpg",
                 type: "image",
                 caption: "GST Seminar",
             },
             {
-                src: "../greenstem/pic/gst-seminar/greenstem (22).jpg",
+                src: "/pic/gst-seminar/greenstem (22).jpg",
                 type: "image",
                 caption: "GST Seminar",
             },
             {
-                src: "../greenstem/pic/gst-seminar/greenstem (25).jpg",
+                src: "/pic/gst-seminar/greenstem (25).jpg",
                 type: "image",
                 caption: "GST Seminar",
             },
             {
-                src: "../greenstem/pic/gst-seminar/greenstem (45).jpg",
+                src: "/pic/gst-seminar/greenstem (45).jpg",
                 type: "image",
                 caption: "GST Seminar",
             },
@@ -623,19 +623,19 @@ function showContent(selectedButton, targetContent, changeImg) {
 
     // Change background and SVG images based on the 'changeImg' parameter
     if (changeImg) {
-        imageToChange.src = '../greenstem/pic/product/workshop-system-preview.png';
-        (document.querySelector('.bg')).src = '../greenstem/pic/product/workshop blobWrapper.svg';
-        (document.querySelector('.svg-icon1')).src = '../greenstem/pic/product/workshop-unmatched-support.svg';
-        (document.querySelector('.svg-icon2')).src = '../greenstem/pic/product/workshop-device.svg';
-        (document.querySelector('.svg-icon3')).src = '../greenstem/pic/product/workshop-print.svg';
-        (document.querySelector('.svg-icon4')).src = '../greenstem/pic/product/workshop-inventory.svg';
+        imageToChange.src = '/pic/product/workshop-system-preview.png';
+        (document.querySelector('.bg')).src = '/pic/product/workshop blobWrapper.svg';
+        (document.querySelector('.svg-icon1')).src = '/pic/product/workshop-unmatched-support.svg';
+        (document.querySelector('.svg-icon2')).src = '/pic/product/workshop-device.svg';
+        (document.querySelector('.svg-icon3')).src = '/pic/product/workshop-print.svg';
+        (document.querySelector('.svg-icon4')).src = '/pic/product/workshop-inventory.svg';
     } else {
-        imageToChange.src = '../greenstem/pic/product/spare-part-system-preview.png';
-        (document.querySelector('.bg')).src = '../greenstem/pic/product/blobWrapper.svg';
-        (document.querySelector('.svg-icon1')).src = '../greenstem/pic/product/unmatchedSupport.svg';
-        (document.querySelector('.svg-icon2')).src = '../greenstem/pic/product/deviceAccessibility.svg';
-        (document.querySelector('.svg-icon3')).src = '../greenstem/pic/product/barcodePrinting.svg';
-        (document.querySelector('.svg-icon4')).src = '../greenstem/pic/product/inventoryManagement.svg';
+        imageToChange.src = '/pic/product/spare-part-system-preview.png';
+        (document.querySelector('.bg')).src = '/pic/product/blobWrapper.svg';
+        (document.querySelector('.svg-icon1')).src = '/pic/product/unmatchedSupport.svg';
+        (document.querySelector('.svg-icon2')).src = '/pic/product/deviceAccessibility.svg';
+        (document.querySelector('.svg-icon3')).src = '/pic/product/barcodePrinting.svg';
+        (document.querySelector('.svg-icon4')).src = '/pic/product/inventoryManagement.svg';
     };
 
     // Reset the preview list to default

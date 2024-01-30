@@ -256,11 +256,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </nav>
 
     <div class="content container-fluid">
+        <div class="career-bg">
+            <h1>Career Opportunities</h1>
+        </div>
         <div class="career-intro">
-
-            <div class="career-bg">
-                <img src="/pic/career/career-bg.jpeg" alt="team picture">
-            </div>
             <div class="career-desc">
                 <h3 class="career-title">Join Us in Something Bigger</h3>
                 <h4 class="career-subtitle">Explore Opportunities at Greenstem</h4>
@@ -270,7 +269,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     the future of information technology. Explore exciting opportunities and make a meaningful impact
                     with us!
                 </p>
-
             </div>
         </div>
 
