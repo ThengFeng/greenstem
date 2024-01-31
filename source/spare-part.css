@@ -28,9 +28,6 @@
     position: relative;
 }
 
-.console-underscore.hidden {
-    opacity: 0;
-}
 
 .product-header img {
     width: 64.73%;

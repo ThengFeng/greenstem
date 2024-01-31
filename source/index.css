@@ -1,0 +1,453 @@
+.wave-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    height: 65vh;
+}
+
+.wave-container::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: url('../pic/index/homePage_bg.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 125%;
+    background-attachment: fixed;
+    filter: blur(5px);
+    opacity: 0.75;
+}
+
+.waves {
+    height: 15vh;
+    position: relative;
+    width: 100%;
+    margin-top: 55.5vh;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+.title {
+    text-align: justify;
+    position: absolute;
+    left: 12.25%;
+    top: 18.225%;
+    color: #05140e;
+}
+
+.title button {
+    padding: 1.825% 4%;
+    background-color: #624DE7;
+}
+
+.title p {
+    margin-bottom: 3.75%;
+    font-size: 1.125vw;
+}
+
+.title h1 {
+    line-height: normal;
+    margin-bottom: 2.5vh;
+}
+
+.feature {
+    text-align: center;
+    margin: 6% 0 0 15%;
+    height: max-content;
+    border-radius: 50px;
+    width: 70%;
+    box-shadow: 1px 17px 100px 0px #ECE8E8;
+    padding: 4% 7.15% 4.5% 7.15%;
+}
+
+.feature h5 {
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 1.32vh;
+}
+
+.feature-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-content {
+    margin-top: 6.25%;
+    width: 23.5%;
+    min-width: 95px;
+    height: 37.5vh;
+    padding: 2.5% 2%;
+    border-radius: 10px 10px 50px 10px;
+    text-align: start;
+    transition: all 0.25s ease-in;
+    color: black;
+    word-spacing: normal;
+    box-shadow: 0px 0px 50px 0px #F7EDFF;
+}
+
+.feature-content h4 {
+    color: #29A87A;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 0.25s ease-in;
+}
+
+.feature-content p {
+    margin-top: 1.5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 0.91vw;
+}
+
+.feature-content:hover {
+    background: #29A87A;
+    color: white;
+    transform: scale(1.05);
+}
+
+.feature-content:hover h4 {
+    color: white;
+}
+
+.why-select-us {
+    display: flex;
+    width: 81.31%;
+    height: 65vh;
+    margin: 10% 0 0 9.325%;
+}
+
+.why-select-us h5 {
+    font-size: 1.265vw;
+    position: absolute;
+}
+
+.why-select-us-content,
+.why-us-pic {
+    margin-top: 1.97vh;
+}
+
+.why-select-us-content {
+    width: 54%;
+}
+
+.why-select-us p {
+    margin-top: 1.97vh;
+    margin-bottom: 5.07vh;
+    width: 70%;
+}
+
+.why-select-us-content strong {
+    font-size: 3.35vw;
+    color: #624DE7;
+}
+
+.why-us-pic {
+    display: flex;
+    gap: 5%;
+    width: 46%;
+    height: 65vh;
+}
+
+#pic1 {
+    background: url('../pic/index/team.jpg') 50%/cover no-repeat;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#pic2 {
+    background: url('../pic/index/Certified Professional.JPG') 50%/cover no-repeat;
+    border-radius: 5px;
+    width: 10%;
+}
+
+#pic3 {
+    background: url('../pic/index/support-team.JPG') 50%/cover no-repeat;
+    border-radius: 5px;
+    width: 10%;
+}
+
+.pic {
+    transition: width 0.5s ease;
+    will-change: transform;
+    cursor : pointer;
+    transform: translateZ(0);
+}
+
+.product-container {
+    height: 55vh;
+    background-color: #29A87A;
+    display: flex;
+    margin-top: 10%;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-container h3 {
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.25);
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.product-content img {
+    margin: 0 auto 4.8vh auto;
+    width: 5.25vw;
+    height: auto;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.product-content {
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    padding: 6.5% 0;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-content.hover {
+    background-color: #218662;
+    padding-top: 0%;
+    font-size: larger;
+}
+
+.product-content.hover .product-desc {
+    opacity: 1;
+}
+
+.product-desc {
+    margin-top: 2%;
+    padding: 0% 10%;
+    opacity: 0;
+    transition: all 0.25s ease-in;
+}
+
+.product-line {
+    width: 2px;
+    height: 100%;
+    content: '';
+    background-color: #fff9f9;
+    position: absolute;
+    left: 50%;
+    box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+
+}
+
+.after-sales-service {
+    width: 80.35%;
+    height: max-content;
+    text-align: center;
+    margin: 8% 9.825% 0 9.825%;
+}
+
+.line1 {
+    color: #624DE7;
+    margin: 0;
+}
+
+.line2 {
+    margin: 1% auto 4% auto;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.line3 span {
+    color: #29A87A;
+}
+
+.after-sales-service-container {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+
+.after-sales-service-content {
+    width: 34.3%;
+    height: 40.22vh;
+    margin-top: 4%;
+    box-shadow: 0 4px 100px #F3E4FF;
+}
+
+.after-sales-service-content img {
+    width: 5.73vw;
+    height: auto;
+    margin: 8vh 6.82vw 2.92vh 6.82vw;
+}
+
+.text-area p {
+    font-size: 0.975vw;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.after-sales-service button {
+    background-color: #29A87A;
+    margin-top: 4%;
+    width: 20.5%;
+    height: 7.5vh;
+}
+
+.feedback {
+    width: 83%;
+    margin: 2.5% 8.5% 5% 8.5%;
+    padding-top: 7.85%;
+    text-align: center;
+    border-top: 1.5px dotted #DEDEDE;
+}
+
+.customer-review {
+    margin-top: 5.4vh;
+}
+
+.feedback .swiper-slide .review-header {
+    height: 42px;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.feedback .swiper-slide .review-body {
+    font-size: 0.975vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #575757;
+    margin-top: 10%;
+    display: block;
+}
+
+.feedback .swiper-slide-active {
+    transform: scale(1.05) !important;
+    transition: all 0.5s ease;
+}
+
+.feedback .swiper-slide {
+    height: 55vh !important;
+    padding: 6vh 4.53vw 2vh 4.53vw;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 100px 0px #EDEDED;
+    text-align: start;
+}
+
+.feedback .swiper-pagination {
+    position: static !important;
+    margin-top: 2.5%;
+}
+
+.feedback .swiper-pagination-bullet {
+    background-color: #9483FF !important;
+}
+
+.feedback .swiper-pagination-bullet-active {
+    background-color: #624DE7 !important;
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
+
+.project-preview {
+    display: flex;
+    width: 75%;
+    height: 87vh;
+    margin: 9.5% 12.5% 0 12.5%;
+}
+
+.project-image {
+    width: 53%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-image .project-pic {
+    width: 95%;
+    height: 95%;
+    background-color: #575757;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.project-pic.one {
+    background: url('../pic/index/project-1.JPG') 50%/cover no-repeat;
+}
+
+.project-pic.two {
+    background: url('../pic/index/project-2.jpg') 50%/cover no-repeat;
+}
+
+.project-pic.three {
+    background: url('../pic/index/project-3.JPG') 50%/cover no-repeat;
+}
+
+.project-pic.four {
+    background: url('../pic/index/project-4.JPG') 50%/cover no-repeat;
+}
+
+.project-content {
+    width: 47%;
+    padding-left: 5%;
+    padding-top: calc(15%);
+}
+
+.project-content h5 {
+    font-size: 1.265vw;
+}
+
+.project-content p {
+    margin-top: 2%;
+    width: 20.2vw;
+}
+
+.project-content button {
+    margin-top: 5.5vh;
+    width: 55.17%;
+    height: 7.15vh;
+    border-radius: 5px;
+    border: 1px solid #624DE7;
+    background: white;
+    color: #624DE7;
+}

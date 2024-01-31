@@ -209,6 +209,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     src: "/pic/team_building/team_building_6.jpg",
                     type: "image",
                     caption: "Team Building Event",
+                },
+                {
+                    src: "/pic/team_building/team_building_3.jpg",
+                    type: "image",
+                    caption: "Team Building Event",
+                },
+                {
+                    src: "/pic/team_building/team_building_5.jpg",
+                    type: "image",
+                    caption: "Team Building Event",
+                },
+                {
+                    src: "/pic/team_building/team_building_7.jpg",
+                    type: "image",
+                    caption: "Team Building Event",
                 }
             ]));
         });
@@ -358,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navButton = document.getElementById('navigationBtn');
     const navContent = document.getElementById("navbarSupportedContent");
 
-    let lastScrollPosition = isPhone? 10:0;
+    let lastScrollPosition = isPhone ? 10 : 0;
 
     function checkScroll() {
         var scrollTop = window.scrollY;
@@ -374,8 +389,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // Scrolling up
             navbar.style.transform = 'translateY(0)';
         }
-        if(scrollTop < 10){
-            scrollTop = isPhone? 10: scrollTop;
+        if (scrollTop < 10) {
+            scrollTop = isPhone ? 10 : scrollTop;
         }
         lastScrollPosition = scrollTop;
     }
@@ -474,7 +489,7 @@ const the_animation = document.querySelectorAll('.animation');
 // Iterate through each element with the class 'animation'
 the_animation.forEach((element) => {
     // Set the intersection threshold for triggering the animation
-    const threshold = isPhone? 0.05:0.3; // Default threshold is 0.5
+    const threshold = isPhone ? 0.05 : 0.3; // Default threshold is 0.5
 
     // Create an IntersectionObserver to handle element visibility changes
     const observer = new IntersectionObserver((entries) => {
@@ -706,6 +721,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     // Call the consoleText function with an array of words and the target element id
     consoleText(['Beyond Excellence', 'Redefining Superiority', 'Unveiling the Pinnacle of Our Products'], 'text');
+
     // Function to create a typing animation effect
     function consoleText(words, id) {
         // Get references to the console container and set initial variables
@@ -789,6 +805,48 @@ document.addEventListener('DOMContentLoaded', function () {
         // Set interval for the blinking cursor effect
         setInterval(blinkCursor, 200);
     }
+
+
+    // Call consoleText with the desired word and ID
+    consoleText1('sPtext');
+
+    // Function to create a typing animation effect
+    function consoleText1(id) {
+        // Get references to the console container and set initial variables
+        var target = document.getElementById(id);
+        var word = target.getAttribute('data-text');
+
+        // Check if the target element exists
+        if (!target) {
+            // Exit the function if the target element is not found
+            return;
+        }
+
+        // Function to simulate typing characters
+        function type() {
+            // Check if there are more letters in the current word to display
+            if (letterCount <= word.length) {
+                // Update the target element with the current substring of the word
+                target.innerHTML = word.substring(0, letterCount);
+                letterCount += 1;
+
+                // Set a timeout to continue typing after a short delay
+                setTimeout(type, 100);
+            } else {
+                // Display the full word without disappearing effect
+                target.innerHTML = word;
+
+                // Hide the cursor
+                con.style.display = 'none';
+            }
+        }
+
+        var letterCount = 0;
+        var con = document.getElementById('console');
+        type();
+    }
+
+
 });
 
 //function to disaply the t&c content (contact us)
@@ -845,8 +903,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function formValidation(){
-    const maxFileSize = 10*1024*1024  //10mb
+function formValidation() {
+    const maxFileSize = 10 * 1024 * 1024  //10mb
     var fileInput = document.getElementById('careerFile');
     var fileSize = fileInput.files[0].size;
 
@@ -855,7 +913,7 @@ function formValidation(){
         return false; // Prevent form submission
     }
 
-    
+
 
     return true;
 }
@@ -897,7 +955,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (isPhone) {
         txt.innerHTML = "Greenstem Business Software <br> Sdn Bhd";
-        subtitle.innerHTML= "Greenstem Solutions - <br> Tailored IT Excellence for <br> Empowering Your Automotive Business"
+        subtitle.innerHTML = "Greenstem Solutions - <br> Tailored IT Excellence for <br> Empowering Your Automotive Business"
     }
 })
 
