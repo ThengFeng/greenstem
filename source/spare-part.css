@@ -1,0 +1,267 @@
+.bgEffect {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.bg {
+    width: 50%;
+}
+
+.product-header {
+    padding-top: 23vh;
+    text-align: center;
+    width: 100%;
+    background: rgba(217, 217, 217, 0.20);
+}
+
+.product-header h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 3vw;
+    height: 10.7vh;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+}
+
+.console-underscore.hidden {
+    opacity: 0;
+}
+
+.product-header img {
+    width: 64.73%;
+}
+
+.products-desc {
+    margin: 14.26vh 22.5% 20.09vh 22.5%;
+    font-family: 'Nunito', sans-serif;
+    color: #242331;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 157.4%;
+    font-size: 1.25vw;
+}
+
+.highlight-icon {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    gap: 6.24%;
+}
+
+.highlight-icon img {
+    width: 62.44%;
+}
+
+.highlight-icon-element {
+    width: 20.32%;
+    text-align: center;
+}
+
+.highlight-icon-element p {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.4%;
+    color: #242331;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 8.28vh;
+    margin-bottom: 9.35vh;
+    font-size: 0.9vw;
+}
+
+.product-features {
+    padding: 10vh 0;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+
+.features-container {
+    display: flex;
+    width: 80%;
+    height: max-content;
+    margin-left: 10%;
+}
+
+.feature-img {
+    width: 50%;
+    padding: 5% 15% 0 20%;
+    position: relative;
+}
+
+.feature-img img {
+    border-radius: 50px;
+    width: 20vw;
+}
+
+.features {
+    color: white;
+    position: absolute;
+    transform: scale(0);
+    transition: all 1s ease;
+}
+
+.features.left {
+    transform-origin: right bottom;
+}
+
+.features.right {
+    transform-origin: left top;
+}
+
+.features.active {
+    transform: scale(1);
+}
+
+.features.color1 {
+    border-radius: 20px;
+    background: #29A87A;
+    box-shadow: 0px 4px 100px 0px #DFDFDF;
+    font-size: 1vw;
+}
+
+.features.color2 {
+    border-radius: 30px;
+    background: #6046FF;
+    box-shadow: 0px 4px 100px 0px #DFDFDF;
+    font-size: 1vw;
+}
+
+.feature1 {
+    top: 15%;
+    left: 10%;
+    width: 18vw;
+    padding: 3vh 2.4vw;
+}
+
+.feature2 {
+    top: 32%;
+    right: -6%;
+    width: 15vw;
+    padding: 1.5% 0;
+    transition-delay: 0.25s;
+}
+
+.feature3 {
+    top: 60%;
+    left: 12%;
+    width: 14vw;
+    padding: 1.5vw;
+    transition-delay: 0.5s;
+}
+
+.feature4 {
+    bottom: -6%;
+    right: -10%;
+    width: 18vw;
+    padding: 2vw;
+    transition-delay: 0.75s;
+}
+
+.features-desc {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(18%)
+}
+
+.features-title {
+    font-size: 3vw;
+    width: 100%;
+    text-align: end;
+}
+
+.features-desc p {
+    width: 25.8vw;
+    margin-left: 35%;
+    position: relative;
+    text-align: start;
+}
+
+.product-preview {
+    padding: 6.75vh 0 21.93vh 0;
+    background: url('../pic/product/blobWrapper.svg');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.product-preview-container {
+    width: 80%;
+    margin: 3.83vh 10% 0 10%;
+    padding: 6.75vh 6.5% 8.67vh 6.5%;
+    display: flex;
+    gap: 5%;
+}
+
+.product-preview-content {
+    width: 30%;
+    margin-right: 9%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 17px 100px rgba(151, 151, 151, 0.25);
+    background-color: #fff;
+}
+
+.list-group-item {
+    font-family: 'Inter', sans-serif;
+    color: #575757;
+    font-size: 0.765vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5.37vh 13.75%;
+    cursor: pointer;
+    border: none;
+}
+
+.list-group-item.active,
+.list-group-item:not(.list-group-item.active):hover {
+    background-color: #6046FF;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.product-preview-img {
+    display: none;
+    width: 100%;
+}
+
+.product-preview-img.active {
+    display: block;
+}
+
+.product-preview-img img {
+    height: 100%;
+}
+
+#workshopSystem .product-features-element {
+    background-color: #d4eee4;
+}
+
+#workshopSystem .list-group-item.active {
+    background-color: #29A87A;
+}
+
+#workshopSystem .list-group-item:not(#workshopSystem .list-group-item.active):hover {
+    background-color: #29A87A;
+}
+
+#workshopSystem .product-preview-content {
+    margin-top: 7.5%;
+    height: max-content;
+}
+
+#workshopSystem .product-preview {
+    background: url('../pic/product/workshop blobWrapper.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+}

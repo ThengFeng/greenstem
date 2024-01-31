@@ -259,6 +259,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="career-bg">
             <h1>Career Opportunities</h1>
         </div>
+
         <div class="career-intro">
             <div class="career-desc">
                 <h3 class="career-title">Join Us in Something Bigger</h3>
@@ -270,6 +271,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     with us!
                 </p>
             </div>
+
+            <div class='career-img'></div>
         </div>
 
         <form action="" method="post" enctype="multipart/form-data" onsubmit="return formValidation()" class="career-form">

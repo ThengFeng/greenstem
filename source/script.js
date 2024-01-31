@@ -706,7 +706,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     // Call the consoleText function with an array of words and the target element id
     consoleText(['Beyond Excellence', 'Redefining Superiority', 'Unveiling the Pinnacle of Our Products'], 'text');
-
     // Function to create a typing animation effect
     function consoleText(words, id) {
         // Get references to the console container and set initial variables
@@ -1080,3 +1079,85 @@ const jsonLdScript = document.getElementById('json-ld');
 
 // Set the content of the script element to the JSON-LD data
 jsonLdScript.textContent = JSON.stringify(jsonData, null, 2);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.getElementById('navigation');
+    var productDropDown = document.getElementById('navbarDropdownProduct');
+    var productSubmenu = productDropDown.nextElementSibling;
+    var tutorialDropDown = document.getElementById('navbarDropdownTutorial');
+    var tutorialSubmenu = tutorialDropDown.nextElementSibling;
+
+    // Function to check if an element is part of the dropdown or its submenu
+    function isDropdownElement(element) {
+        return (
+            element.classList.contains('nav-item') ||
+            element.closest('.nav-item') !== null
+        );
+    }
+
+    function showDropdown(dropdown, submenu) {
+        dropdown.setAttribute('aria-expanded', 'true');
+        submenu.style.display = 'block';
+    }
+
+    function hideDropdown(dropdown, submenu) {
+        dropdown.setAttribute('aria-expanded', 'false');
+        submenu.style.display = 'none';
+    }
+
+    navbar.addEventListener('mouseleave', function (event) {
+        if (!isDropdownElement(event.relatedTarget)) {
+            // Close the dropdowns
+            hideDropdown(productDropDown, productSubmenu);
+            hideDropdown(tutorialDropDown, tutorialSubmenu);
+        }
+    });
+
+    productDropDown.addEventListener('mouseenter', function () {
+        // Show the "Product" dropdown when entering the navbar
+        showDropdown(productDropDown, productSubmenu);
+        hideDropdown(tutorialDropDown, tutorialSubmenu);
+    });
+
+    productDropDown.addEventListener('mouseleave', function () {
+        // Close the "Product" dropdown when leaving the navbar
+        hideDropdown(productDropDown, productSubmenu);
+    });
+
+    tutorialDropDown.addEventListener('mouseenter', function () {
+        // Show the "Tutorial" dropdown when entering the navbar
+        showDropdown(tutorialDropDown, tutorialSubmenu);
+        hideDropdown(productDropDown, productSubmenu);
+    });
+
+    tutorialDropDown.addEventListener('mouseleave', function () {
+        // Close the "Tutorial" dropdown when leaving the navbar
+        hideDropdown(tutorialDropDown, tutorialSubmenu);
+    });
+
+    // Handle mouseover and mouseout events on the submenus
+    productSubmenu.addEventListener('mouseover', function () {
+        // Keep the "Product" dropdown open when over the submenu
+        showDropdown(productDropDown, productSubmenu);
+    });
+
+    productSubmenu.addEventListener('mouseout', function (event) {
+        // Close the "Product" dropdown only if the mouse is not over the submenu or the dropdown button
+        if (!isDropdownElement(event.relatedTarget)) {
+            hideDropdown(productDropDown, productSubmenu);
+        }
+    });
+
+    tutorialSubmenu.addEventListener('mouseover', function () {
+        // Keep the "Tutorial" dropdown open when over the submenu
+        showDropdown(tutorialDropDown, tutorialSubmenu);
+    });
+
+    tutorialSubmenu.addEventListener('mouseout', function (event) {
+        // Close the "Tutorial" dropdown only if the mouse is not over the submenu or the dropdown button
+        if (!isDropdownElement(event.relatedTarget)) {
+            hideDropdown(tutorialDropDown, tutorialSubmenu);
+        }
+    });
+});
