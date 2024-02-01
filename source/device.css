@@ -56,7 +56,7 @@
 
     .navbar {
         height: fit-content;
-        padding: 1.5% 0 !important;
+        padding:0 !important;
     }
 
     nav p {
@@ -96,7 +96,7 @@
         margin: 0 !important;
         padding: 0 !important;
         background: #e6e6e6;
-        width: 50vw;
+        width: max-content;
         position: static;
     }
 
@@ -108,7 +108,7 @@
 
     nav .dropdown-item {
         text-align: center !important;
-        padding-left: 0;
+        padding:2% 0;
     }
 
     .navbar-brand {
@@ -745,7 +745,7 @@
     }
 
     .product-header {
-        padding-top: 12vh;
+        padding-top: 15vh;
         padding-bottom: 5vh;
     }
 
@@ -756,13 +756,14 @@
     .product-header h1,
     .product-features h1 {
         font-size: 28px;
+        padding-top: 10%;
     }
 
     .product-header img {
         width: 100%;
     }
 
-    .highlight-desc {
+    .products-desc {
         font-size: 14px;
         margin: 5vh 10%;
     }
@@ -963,28 +964,38 @@
         opacity: 1;
     }
 
-    .career-intro{
-        flex-direction: column;
-        border-radius: 25px;
-        text-align: center;
-        margin-bottom: 10vh;
+    .career-bg{
+        background:url('/pic/career/career-bg.webp') 50%/contain no-repeat;
+        height: 55vh;
+        background-attachment: unset;
     }
 
-    .career-bg, .career-desc{
-        width: 100%;
-        margin-bottom:5% ;
+    .career-bg::before{
+        display: none;
+    }
+    
+    h1{
+        font-size: 25px;
+        height: max-content;
+        background: none;
+        color: black;
+        transform: scale(100%) translateY(-50px);
     }
 
-    .career-bg img{
-        width: 100%;
-        border-radius: 15px;
-    }
-
-    .career-form{
+    .career-desc{
         width: 90%;
-        margin: 10% auto;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    .career-content{
+        width: 100%;
+    }
+    .career-form{
+        width: 100%;
+        margin:0;
         border-radius: 10px;
-        padding-top: 10%;
+        padding: 10% 5% 0 5%;
     }
 
     .career-form h3{
@@ -998,5 +1009,10 @@
 
     #careerFile{
         padding: 26% 12%;
+    }
+
+    .career-form button{
+        width: 50%;
+        height: 5.5vh;
     }
 }
