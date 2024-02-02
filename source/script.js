@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 // event gallery fancybox setting
 document.addEventListener('DOMContentLoaded', function () {
+
     function initializeFancybox(images) {
         return () => {
             new Fancybox(images, {
@@ -186,129 +187,39 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
-    var teamBuildingBtns = document.querySelectorAll('.team-building-Btn');
-    if (teamBuildingBtns) {
-        teamBuildingBtns.forEach(function (button) {
-            button.addEventListener('click', initializeFancybox([
-                {
-                    src: "/pic/team_building/team_building_1.jfif",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_2.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_4.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_6.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_3.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_5.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                },
-                {
-                    src: "/pic/team_building/team_building_7.jpg",
-                    type: "image",
-                    caption: "Team Building Event",
-                }
-            ]));
-        });
+    function setupGallery(buttonSelector, folderName, numberOfImages) {
+        var galleryButtons = document.querySelectorAll(buttonSelector);
+
+        if (galleryButtons) {
+            galleryButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var imageObjects = [];
+
+                    for (var i = 1; i <= numberOfImages; i++) {
+                        var imageObject = {
+                            src: "/pic/" + folderName + "/" + i + ".jpg",
+                            type: "image",
+                            caption: folderName + " Gallery",
+                        };
+                        imageObjects.push(imageObject);
+                    }
+
+                    initializeFancybox(imageObjects)();
+                });
+            });
+        }
     }
 
-    var miapex2023GalleryBtns = document.querySelectorAll('.miapex2023-btn');
-    if (miapex2023GalleryBtns) {
-        miapex2023GalleryBtns.forEach(function (button) {
-            button.addEventListener('click', initializeFancybox([
-                {
-                    src: "/pic/Nov23_Miapex-2023/1.jpg",
-                    type: "image",
-                    caption: "MIAPEX 2023",
-                },
-                {
-                    src: "/pic/Nov23_Miapex-2023/2.jpg",
-                    type: "image",
-                    caption: "MIAPEX 2023",
-                },
-                {
-                    src: "/pic/Nov23_Miapex-2023/3.jpg",
-                    type: "image",
-                    caption: "MIAPEX 2023",
-                },
-                {
-                    src: "/pic/Nov23_Miapex-2023/4.jpg",
-                    type: "image",
-                    caption: "MIAPEX 2023",
-                }
-            ]));
-        });
-    }
+    // Example usage for EVM 2023 Gallery
+    setupGallery('.evm2023-btn', 'sept23_EVM-Asia23', 10);
+    setupGallery('.team-building-Btn','team_building',7);
+    setupGallery('.miapex2023-btn','Nov23_Miapex-2023',4);
+    setupGallery('.gstSeminar-btn','gst-seminar',4);
 
-    var evm2023GalleryButtons = document.querySelectorAll('.evm2023-btn');
-    if (evm2023GalleryButtons) {
-        evm2023GalleryButtons.forEach(function (button) {
-            button.addEventListener('click', initializeFancybox([
-                {
-                    src: "/pic/sept23_EVM-Asia23/1.jpg",
-                    type: "image",
-                    caption: "EVM 2023",
-                },
-                {
-                    src: "/pic/sept23_EVM-Asia23/2.jpg",
-                    type: "image",
-                    caption: "EVM 2023",
-                }, {
-                    src: "/pic/sept23_EVM-Asia23/3.jpg",
-                    type: "image",
-                    caption: "EVM 2023",
-                }, {
-                    src: "/pic/sept23_EVM-Asia23/4.jpg",
-                    type: "image",
-                    caption: "EVM 2023",
-                }
-            ]))
-        })
-    }
+    // You can add more galleries as needed, each with its own setupGallery call
 
-    var gstSeminarButton = document.querySelector('.gstSeminar-btn');
-    if (gstSeminarButton) {
-        gstSeminarButton.addEventListener('click', initializeFancybox([
-            {
-                src: "/pic/gst-seminar/greenstem (16).jpg",
-                type: "image",
-                caption: "GST Seminar",
-            },
-            {
-                src: "/pic/gst-seminar/greenstem (22).jpg",
-                type: "image",
-                caption: "GST Seminar",
-            },
-            {
-                src: "/pic/gst-seminar/greenstem (25).jpg",
-                type: "image",
-                caption: "GST Seminar",
-            },
-            {
-                src: "/pic/gst-seminar/greenstem (45).jpg",
-                type: "image",
-                caption: "GST Seminar",
-            },
-        ]))
-    }
 });
+
 
 
 //dropdown function use on footer 

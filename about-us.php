@@ -276,90 +276,24 @@
         </div>
 
         <div class="gallery-image-container">
-            <div class="swiper gallery-swiper">
-                <div class="swiper-wrapper">
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_1.JPG" alt="" class="gallery-image">
-                    </div>
+             <div class="swiper gallery-swiper">
+                 <div class="swiper-wrapper">
+                     <?php
+                         $galleryPath = "/pic/gallery/";
+                          $numberOfImages = 12;
 
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_2.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_3.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_4.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_5.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_6.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_7.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_8.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_9.JPG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_10.JPEG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_11.JPEG" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_12.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_13.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_14.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_15.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_16.jpeg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_17.jpeg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_18.jpeg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_19.jpg" alt="" class="gallery-image">
-                    </div>
-
-                    <div class="image-container swiper-slide">
-                        <img src="/pic/gallery/gallery_20.jpg" alt="" class="gallery-image">
-                    </div>
-                </div>
+                         for ($i = 1; $i <= $numberOfImages; $i++) {
+                         $imagePath = $galleryPath . "gallery_" . $i . ".jpg"; // Adjust the file extension based on your images
+                        ?>
+                            <div class="image-container swiper-slide">
+                            <img src="<?php echo $imagePath; ?>" alt="" class="gallery-image">
+                            </div>
+                            <?php } ?>
+                 </div>
             </div>
         </div>
+</div>
+
     </div>
 
     <?php include("footer.php");?>
