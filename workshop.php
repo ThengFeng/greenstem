@@ -28,7 +28,7 @@
 
         <div class="product-header">
             <h1>
-                <span id="sPtext" data-text="Workshop Management System"></span>
+                <span id="text" data-text="Workshop Management System"></span>
                 <span class='console-underscore' id='console'>&#95;</span>
             </h1>
             <img src="/pic/product/Group 53 (1).svg" alt="Overview of product">

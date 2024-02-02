@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         var imageObject = {
                             src: "/pic/" + folderName + "/" + i + ".jpg",
                             type: "image",
-                            caption: folderName + " Gallery",
+                            caption: folderName,
                         };
                         imageObjects.push(imageObject);
                     }
@@ -209,15 +209,10 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-
-    // Example usage for EVM 2023 Gallery
     setupGallery('.evm2023-btn', 'sept23_EVM-Asia23', 10);
     setupGallery('.team-building-Btn','team_building',7);
     setupGallery('.miapex2023-btn','Nov23_Miapex-2023',4);
     setupGallery('.gstSeminar-btn','gst-seminar',4);
-
-    // You can add more galleries as needed, each with its own setupGallery call
-
 });
 
 
@@ -559,10 +554,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //product page title typing effect
 document.addEventListener('DOMContentLoaded', function () {
-    consoleText1('sPtext');
+    consoleText('text');
 
     // Function to create a typing animation effect
-    function consoleText1(id) {
+    function consoleText(id) {
         // Get references to the console container and set initial variables
         var target = document.getElementById(id);
         var word = target.getAttribute('data-text');
@@ -582,7 +577,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 letterCount += 1;
 
                 // Set a timeout to continue typing after a short delay
-                setTimeout(type, 100);
+                setTimeout(type, 75);
             } else {
                 // Display the full word without disappearing effect
                 target.innerHTML = word;

@@ -50,6 +50,7 @@
         min-height: 50vh;
     }
 
+    /*Navigation */
     nav {
         background: white !important;
     }
@@ -118,7 +119,132 @@
     .navbar-brand img{
         height: 6.5vh;
     }
+    /*navigation end*/
 
+    /*footer*/
+    footer {
+        padding: 5vh 5% 1vh 5%;
+        color: white;
+        background-color: #29A87A;
+        position: relative;
+    }
+
+    .footer-icon {
+        font-size: 15px !important;
+    }
+
+    footer .contact-list {
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+        justify-content: space-between;
+    }
+
+    footer .contact-list-element {
+        width: 50%;
+        margin-bottom: 3vh;
+        max-width: 100%;
+        width: max-content;
+    }
+
+    .phone-number .text span{
+        width: max-content;
+    }
+    .text small {
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 12px;
+        margin-left: 5%;
+    }
+
+    .contact .text {
+        font-size: 12px;
+        margin-left: 0;
+
+    }
+
+    .contact-list-element:nth-child(3) {
+        width: 60%;
+        margin: 0;
+    }
+
+    .contact-list-element:last-child a {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-line {
+        height: 1px;
+        width: 90%;
+        left: 5%;
+    }
+
+    .footer-page-link {
+        padding-top: 3.5vh;
+        display: flex;
+        height: max-content;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-page-link img {
+        height: 4vh;
+        width: auto;
+    }
+
+    .desc-header span{
+        font-size: 8px;
+    }
+
+    .desc-content {
+        font-size: 9.5px;
+        margin-left: 7.5%;
+    }
+
+    .desc-header p,
+    .social-media p {
+        margin-top: 0 !important;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 2.31vh;
+    }
+
+    .page {
+        width: 15vw;
+    }
+
+    .desc{
+        width: max-content;
+        margin: 0 auto 3vh auto;
+    }
+
+    .tutorial-video {
+        margin-left: 5%;
+        width: max-content;
+        margin-right: 0;
+        margin-bottom: 3vh;
+    }
+
+
+    footer ul {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .nested-list a {
+        font-size: 9px;
+    }
+
+    .copyright p {
+        font-size: 9px;
+    }
+    /*footer end*/
+
+
+    /*index*/
     .wave-container {
         height: 70vh;
     }
@@ -330,127 +456,9 @@
         transform: scale(1) !important;
         transition: all 0.5s ease;
     }
+    /*index end*/
 
-    footer {
-        padding: 5vh 5% 1vh 5%;
-        color: white;
-        background-color: #29A87A;
-        position: relative;
-    }
-
-    .footer-icon {
-        font-size: 15px !important;
-    }
-
-    footer .contact-list {
-        flex-wrap: wrap;
-        margin-bottom: 5vh;
-        justify-content: space-between;
-    }
-
-    footer .contact-list-element {
-        width: 50%;
-        margin-bottom: 3vh;
-        max-width: 100%;
-        width: max-content;
-    }
-
-    .phone-number .text span{
-        width: max-content;
-    }
-    .text small {
-        font-size: 10px;
-    }
-
-    .text {
-        font-size: 12px;
-        margin-left: 5%;
-    }
-
-    .contact .text {
-        font-size: 12px;
-        margin-left: 0;
-
-    }
-
-    .contact-list-element:nth-child(3) {
-        width: 60%;
-        margin: 0;
-    }
-
-    .contact-list-element:last-child a {
-        position: static;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .footer-line {
-        height: 1px;
-        width: 90%;
-        left: 5%;
-    }
-
-    .footer-page-link {
-        padding-top: 3.5vh;
-        display: flex;
-        height: max-content;
-        position: relative;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .footer-page-link img {
-        height: 4vh;
-        width: auto;
-    }
-
-    .desc-header span{
-        font-size: 8px;
-    }
-
-    .desc-content {
-        font-size: 9.5px;
-        margin-left: 7.5%;
-    }
-
-    .desc-header p,
-    .social-media p {
-        margin-top: 0 !important;
-        font-size: 12px;
-        font-weight: 700;
-        margin-bottom: 2.31vh;
-    }
-
-    .page {
-        width: 15vw;
-    }
-
-    .desc{
-        width: max-content;
-        margin: 0 auto 3vh auto;
-    }
-
-    .tutorial-video {
-        margin-left: 5%;
-        width: max-content;
-        margin-right: 0;
-        margin-bottom: 3vh;
-    }
-
-
-    footer ul {
-        font-size: 10px;
-        width: 100%;
-    }
-
-    .nested-list a {
-        font-size: 9px;
-    }
-
-    .copyright p {
-        font-size: 9px;
-    }
-
+    /*contact us*/
     .pop-up-bg {
         padding: 15vh 10vw;
     }
@@ -576,7 +584,10 @@
     ol {
         font-size: 15px;
     }
+    /*contact us end*/
 
+
+    /*about us */
     .header {
         margin-top: 12vh;
     }
@@ -743,7 +754,9 @@
     .gallery-image-container {
         height: 30vh !important;
     }
+    /*about us end*/
 
+    /*product*/
     .product-header {
         padding-top: 15vh;
         padding-bottom: 5vh;
@@ -784,56 +797,6 @@
         margin-bottom: 3vh;
     }
 
-    .menu-selection {
-        padding-top: 5vh;
-    }
-
-    .menu-selection p {
-        font-size: 10px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .selection-bar {
-        font-size: 9.5px;
-        margin: 3vh 5%;
-        width: 90%;
-    }
-
-    .selection-bar-item.active {
-        font-size: 10.5px;
-    }
-
-    .selection-bar-line {
-        left: calc(48%);
-    }
-
-    .systemView {
-        width: 80%;
-    }
-
-    .system {
-        padding-top: 7.5vh;
-    }
-
-    .system h2 {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .intro {
-        flex-wrap: wrap;
-        margin: 5vh 10%;
-    }
-
-    .intro img {
-        width: 100%;
-    }
-
-    .intro-desc {
-        font-size: 12px;
-        padding: 5% 0;
-    }
 
     .product-features {
         padding: 0;
@@ -962,7 +925,9 @@
         margin: 2% 0 !important;
         opacity: 1;
     }
+    /*product end*/
 
+    /*career*/
     .career-bg{
         background:url('/pic/career/career-bg.webp') 50%/contain no-repeat;
         height: 55vh;
@@ -998,7 +963,6 @@
     }
 
     .career-form h3{
-        width: max-content;
         margin-bottom: 5vh;
     }
 
@@ -1014,4 +978,5 @@
         width: 50%;
         height: 5.5vh;
     }
+    /*career end*/
 }

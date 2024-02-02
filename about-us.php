@@ -280,7 +280,7 @@
                  <div class="swiper-wrapper">
                      <?php
                          $galleryPath = "/pic/gallery/";
-                          $numberOfImages = 12;
+                          $numberOfImages = 14;
 
                          for ($i = 1; $i <= $numberOfImages; $i++) {
                          $imagePath = $galleryPath . "gallery_" . $i . ".jpg"; // Adjust the file extension based on your images
@@ -292,8 +292,6 @@
                  </div>
             </div>
         </div>
-</div>
-
     </div>
 
     <?php include("footer.php");?>

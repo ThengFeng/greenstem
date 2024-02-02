@@ -29,7 +29,7 @@
         $messageContent = htmlspecialchars($_POST['message']);
         $companyName = htmlspecialchars($_POST['companyName']);
 
-        $to = "admin@greenstem.com.my";
+        $to = $email_acc;
         $subject = "Website Message";
         $message =
             "Company: " . $companyName . "\n" .

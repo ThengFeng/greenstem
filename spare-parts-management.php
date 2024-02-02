@@ -28,7 +28,7 @@
 
         <div class="product-header">
             <h1>
-                <span id="sPtext" data-text="Spare Parts Management & Accounting System"></span>
+                <span id="text" data-text="Spare Parts Management & Accounting System"></span>
                 <span class='console-underscore' id='console'>&#95;</span>
             </h1>
             <img src="/pic/product/Products.png" alt="Overview of product">

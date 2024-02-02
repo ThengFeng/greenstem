@@ -1,5 +1,26 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="Accounting Software, Spare Parts System, Workshop System" />
+    <meta name="description"
+        content="An accounting software company in Malaysia. Specifically Designed for spare parts to improve efficiency and productivity." />
+    <title>Career</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/pic/icon.webp" />
+
+    <?php include("link.php"); ?>
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="/source/style.css">
+    <link rel="stylesheet" href="/source/career.css">
+    <link rel="stylesheet" href="/source/device.css">
+</head>
+
+<body>
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $position = $_POST['position'];
     $email = $_POST['careerEmail'];
@@ -18,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (move_uploaded_file($uploadedFile, $uploadDir . $fileName)) {
         // Email content
-        $to = 'admin@greenstem.com.my';  // Change this to your recipient email
+        $to = $email_acc;
         $subject = 'Job Application Submission';
         $messageBody = "Position: $position <br>";
         $messageBody .= "Name: $name <br>";
@@ -48,37 +69,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (mail($to, $subject, $message, $headers)) {
             echo '<script>alert("Application submitted successfully!");</script>';
         } else {
-            echo '<script>alert("Application submission failed. Please check the server logs for more information.");</script>';
+            echo '<script>alert("Application submission failed. Please contact support for assistance.");</script>';
         }
     } else {
-        echo '<script>alert("File upload failed. Please check the server logs for more information.");</script>';
+        echo '<script>alert("File upload failed. Please contact support for assistance.");</script>';
     }
 }
-
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="keywords" content="Accounting Software, Spare Parts System, Workshop System" />
-    <meta name="description"
-        content="An accounting software company in Malaysia. Specifically Designed for spare parts to improve efficiency and productivity." />
-    <title>Career</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/pic/icon.webp" />
-
-    <?php include("link.php"); ?>
-
-    <!--Custom Css-->
-    <link rel="stylesheet" href="/source/style.css">
-    <link rel="stylesheet" href="/source/career.css">
-    <link rel="stylesheet" href="/source/device.css">
-</head>
-
-<body>
     <?php include("navigation.php"); ?>
 
     <div class="content container-fluid career">
@@ -106,12 +104,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h3>Join Our Team</h3>
             <select name="position" id="position" class="form-select" required>
                 <option selected disabled>*Select Position</option>
-                <option value="Sales Executive">Software Sales Executive</option>
-                <option value="Web Programmer">Web Programmer</option>
-                <option value="Apps Programmer">Apps Programmer</option>
-                <option value="UI/UX Designer">UI/UX Designer</option>
-                <option value="Accounting System Support">Accounting System Support</option>
-                <option value="Technical Support">Technical Support</option>
+                <?php
+                // Array of positions
+                $positions = [
+                    "Software Sales Executive",
+                    "Web Programmer",
+                    "Apps Programmer",
+                    "UI/UX Designer",
+                    "Accounting System Support",
+                    "Technical Support"
+                ];
+
+                // Loop through the array and generate options
+                foreach ($positions as $position) {
+                    echo '<option value="' . htmlspecialchars($position) . '">' . htmlspecialchars($position) . '</option>';
+                }
+                ?>
             </select>
 
             <div class="form-floating">

@@ -254,6 +254,8 @@ nav .nav-link:hover::after {
 
 /*navigation bar end*/
 
+
+/*footer */
 footer {
     padding: 10vh 15% 1vh 15%;
     color: white;
@@ -494,9 +496,9 @@ footer li::before {
     margin-bottom: 0;
 }
 
+/*footer end*/
 
-
-
+/*video.php*/
 #selected-Video {
     padding-top: 12vh;
     width: 80%;
@@ -505,6 +507,7 @@ footer li::before {
 }
 
 
+/*toggle section use for index/ contact us*/
 .accordion-item {
     margin-bottom: 2%;
     width: 80%;
