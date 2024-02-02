@@ -43,7 +43,118 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <script type="application/ld+json" id="json-ld"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "url": "https://www.greenstem.com.my",
+                    "logo": "https://www.greenstem.com.my/pic/icon.webp"
+                },
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://www.greenstem.com.my",
+                    "name": "Greenstem Business Software Sdn Bhd",
+                    "image": [
+                        "https://www.greenstem.com.my/img/photo/greenstem (1).webp"
+                    ],
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Block A, A-3-3A, Ativo Plaza",
+                        "addressLocality": "Bandar Sri Damansara",
+                        "addressRegion": "KL",
+                        "postalCode": "52200",
+                        "addressCountry": "MY"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 3.1966091,
+                        "longitude": 101.6160515
+                    },
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday",
+                                "Wednesday",
+                                "Thursday",
+                                "Friday"
+                            ],
+                            "opens": "09:00",
+                            "closes": "18:00"
+                        }
+                    ],
+                    "telephone": "+603-6263 3933",
+                    "email": "mailto:admin@greenstem.com.my",
+                    "faxNumber": "+603-6263 7738",
+                    "url": "https://www.greenstem.com.my"
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Why choose us?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Specifically designed for spare parts to improve <strong>efficiency</strong> and <strong>productivity</strong>."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Achievement",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "<ul><li>Engaged in spare parts accounting software business more than <strong>20 years</strong>.</li><li>Installed to more than <strong>800 spare parts companies</strong>.</li></ul>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "ItemList",
+                    "itemListElement": [
+                        {
+                            "@type": "SoftwareApplication",
+                            "name": "Spare Parts Management & Accounting System",
+                            "description": "Our specialized system for spare parts companies optimizes efficiency through real-time inventory management, automated orders, and streamlined accounting",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "Greenstem Business Software SDN BHD"
+                            },
+                            "image": [
+                                "https://www.greenstem.com.my/img/photo/greenstem (1).webp"
+                            ],
+                            "applicationCategory": "Business / Workshop",
+                            "availableOnDevice": "PC & Mobile",
+                            "featureList": "https://www.greenstem.com.my",
+                            "inLanguage": "English",
+                            "operatingSystem": "Windows"
+                        },
+                        {
+                            "@type": "SoftwareApplication",
+                            "name": "Workshop Management System",
+                            "description": "Designed for workshops, optimizes efficiency with features like job scheduling, inventory tracking, and automated billing.",
+                            "brand": {
+                                "@type": "brand",
+                                "name": "Greenstem Business Software SDN BHD"
+                            },
+                            "image": [
+                                "https://www.greenstem.com.my/img/photo/greenstem (1).webp"
+                            ],
+                            "applicationCategory": "Business / Workshop",
+                            "availableOnDevice": "PC & Mobile",
+                            "featureList": "https://www.greenstem.com.my",
+                            "inLanguage": "English",
+                            "operatingSystem": "Windows"
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+    
 
 </head>
 
@@ -299,7 +410,8 @@
                         <div class="features color2 feature2 right">Document Entry/ Amend/ <br> Delete Tracking</div>
                         <div class="features color2 feature3 left">Data Migration from Other System</div>
                         <div class="features color1 feature4 right">Provide Sufficient <br> Information for Decision
-                            <br> Making</div>
+                            <br> Making
+                        </div>
 
                     </div>
 
@@ -349,8 +461,8 @@
                         </ul>">
                     </div>
                     <div class="product-preview-img" id="SparePartsTransactionDetail">
-                        <img src="/pic/product/transaction_detail.png" alt="transaction_detail"
-                            class="gallery" data-fancybox="sparePart" data-caption="Transaction Detail Analysis
+                        <img src="/pic/product/transaction_detail.png" alt="transaction_detail" class="gallery"
+                            data-fancybox="sparePart" data-caption="Transaction Detail Analysis
                         <ul>
                             <li>Stock Quantity and Cost</li>
                             <li>Sales Order and Purchase Ordre back order quantity</li>
@@ -400,8 +512,7 @@
             <h2>Workshop Management System</h2>
 
             <div class="blobWrapper bgEffect">
-                <img src="/pic/product/workshop blobWrapper2.svg" alt="background effect"
-                    class="bg">
+                <img src="/pic/product/workshop blobWrapper2.svg" alt="background effect" class="bg">
             </div>
 
             <div class="intro">
@@ -418,10 +529,12 @@
                 <div class="features-container">
                     <div class="feature-img">
                         <img src="/pic/product/feature-bg.jpg" alt="">
-                        <div class="features color2 feature1 left">Keep Track of Service <br> Record for Each Vehicle</div>
+                        <div class="features color2 feature1 left">Keep Track of Service <br> Record for Each Vehicle
+                        </div>
                         <div class="features color1 feature2 right">Reminder Letter for Service</div>
                         <div class="features color1 feature3 left">Daily Profit on Each Bill </div>
-                        <div class="features color2 feature4 right">Mechanics' Commission <br> Calculated on Sales <br> Amount</div>
+                        <div class="features color2 feature4 right">Mechanics' Commission <br> Calculated on Sales <br>
+                            Amount</div>
 
                     </div>
 
@@ -465,8 +578,8 @@
                         </ul>">
                     </div>
                     <div class="product-preview-img" id="WorkshopVehicleServiceRecord">
-                        <img src="/pic/product/vehicle_service_history.jpg" alt="vehicle_service_record"
-                            class="gallery" data-fancybox="workShop" data-caption="Vehicle Service Record
+                        <img src="/pic/product/vehicle_service_history.jpg" alt="vehicle_service_record" class="gallery"
+                            data-fancybox="workShop" data-caption="Vehicle Service Record
                         <ul>
                             <li>Keep track of service records by car number</li>
                             <li>Also show next service mileage</li>
@@ -485,7 +598,7 @@
                     </div>
                     <div class="product-preview-img" id="WorkshopSampleInvoice">
                         <img src="/pic/product/workshop_sample_invoice.jpeg" alt="sample invoice" class="gallery"
-                        data-fancybox="workShop" data-caption="Sample Invoice">
+                            data-fancybox="workShop" data-caption="Sample Invoice">
                     </div>
                 </div>
 
@@ -603,11 +716,9 @@
                             <ul class="nested-list" id="glCollapse">
                                 <li><a href="/video.html?videoPath=General Ledger/Bank_Reconciliation.mp4">Bank
                                         Reconciliation</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=General Ledger/GL-Payment Quick Entry_Latest.mp4">GL-Payment
+                                <li><a href="/video.html?videoPath=General Ledger/GL-Payment Quick Entry_Latest.mp4">GL-Payment
                                         Quick Entry Latest</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=General Ledger/GL-Receipt_Quick_Entry.mp4">DO
+                                <li><a href="/video.html?videoPath=General Ledger/GL-Receipt_Quick_Entry.mp4">DO
                                         GL-Receipt Quick Entry</a></li>
                                 <li><a href="/video.html?videoPath=General Ledger/Journal_Entry.mp4">Journal
                                         Entry</a></li>
@@ -620,22 +731,17 @@
                                         Order</a></li>
                                 <li><a href="/video.html?videoPath=Account Receivable/Direct_Invoice.mp4">Direct
                                         Invoice</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=Account Receivable/DO-Invoice_Generator.mp4">DO-Invoice
+                                <li><a href="/video.html?videoPath=Account Receivable/DO-Invoice_Generator.mp4">DO-Invoice
                                         Generator</a></li>
                                 <li><a href="/video.html?videoPath=Account Receivable/Invoice_Posting.mp4">Invoice
                                         Posting</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=Account Receivable/Receivable_Credit_Note.mp4">Receivable
+                                <li><a href="/video.html?videoPath=Account Receivable/Receivable_Credit_Note.mp4">Receivable
                                         Credit Note</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=Account Receivable/Receivable_Debit_Note.mp4">Receivable
+                                <li><a href="/video.html?videoPath=Account Receivable/Receivable_Debit_Note.mp4">Receivable
                                         Debit Note</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=Account Receivable/Receivable_Receipt.mp4">Receivable
+                                <li><a href="/video.html?videoPath=Account Receivable/Receivable_Receipt.mp4">Receivable
                                         Receipt</a></li>
-                                <li><a
-                                        href="/video.html?videoPath=Account Receivable/Receivable_Report.mp4">Receivable
+                                <li><a href="/video.html?videoPath=Account Receivable/Receivable_Report.mp4">Receivable
                                         Report</a></li>
                             </ul>
                         </li>
@@ -697,7 +803,7 @@
         </div>
 
     </footer>
-    
+
 
 
     <script src="/source/script.js"></script>

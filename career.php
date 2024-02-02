@@ -81,15 +81,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <?php include("navigation.php"); ?>
 
-    <div class="content container-fluid">
+    <div class="content container-fluid career">
         <div class="career-bg"></div>
         <h1>Career Opportunities</h1>
 
 
         <div class="career-intro">
             <div class="career-desc">
-                <h3 class="career-title">Join Us in Something Bigger</h3>
-                <h4 class="career-subtitle">Explore Opportunities at Greenstem</h4>
+                <h2 class="career-title">Join Us in Something Bigger</h2>
+                <h3 class="career-subtitle">Explore Opportunities at Greenstem</h3>
                 <p class="career-content">
                     Join the Greenstem family and be part of our mission to innovate in the software industry. Whether
                     you're an experienced IT professional or a fresh graduate, we welcome you to contribute to shaping

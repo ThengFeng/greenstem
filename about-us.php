@@ -14,6 +14,7 @@
 
     <!--Custom Css-->
     <link rel="stylesheet" href="/source/style.css">
+    <link rel="stylesheet" href="/source/about-us.css">
     <link rel="stylesheet" href="/source/device.css">
 </head>
 

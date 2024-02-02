@@ -292,7 +292,7 @@
 
     .project-content button {
         margin-top: 2.5vh;
-        width: 55.17%;
+        width: 65%;
         height: 5vh;
         border-radius: 5px;
         border: 1px solid #624DE7;
@@ -513,7 +513,7 @@
     }
 
     form {
-        width: 100%;
+        width: 100% !important;
     }
 
     .form-title {
@@ -528,7 +528,7 @@
 
     input::placeholder,
     textarea::placeholder {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .checkbox label {
@@ -756,7 +756,6 @@
     .product-header h1,
     .product-features h1 {
         font-size: 28px;
-        padding-top: 10%;
     }
 
     .product-header img {
@@ -974,12 +973,10 @@
         display: none;
     }
     
-    h1{
+    .career h1{
         font-size: 25px;
-        height: max-content;
-        background: none;
         color: black;
-        transform: scale(100%) translateY(-50px);
+        transform: scale(100%) translateY(-30px) !important;
     }
 
     .career-desc{
@@ -989,7 +986,9 @@
     }
     
     .career-content{
-        width: 100%;
+        width: 80%;
+        font-size: 12px;
+        margin: 3% auto;
     }
     .career-form{
         width: 100%;

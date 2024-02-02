@@ -188,19 +188,19 @@
 }
 
 #pic1 {
-    background: url('../pic/index/team.jpg') 50%/cover no-repeat;
+    background: url('../pic/index/team.webp') 50%/cover no-repeat;
     border-radius: 5px;
     width: 80%;
 }
 
 #pic2 {
-    background: url('../pic/index/Certified Professional.JPG') 50%/cover no-repeat;
+    background: url('../pic/index/Certified-Professional.webp') 50%/cover no-repeat;
     border-radius: 5px;
     width: 10%;
 }
 
 #pic3 {
-    background: url('../pic/index/support-team.JPG') 50%/cover no-repeat;
+    background: url('../pic/index/support-team.webp') 50%/cover no-repeat;
     border-radius: 5px;
     width: 10%;
 }
@@ -412,19 +412,19 @@
 }
 
 .project-pic.one {
-    background: url('../pic/index/project-1.JPG') 50%/cover no-repeat;
+    background: url('../pic/index/project-1.webp') 50%/cover no-repeat;
 }
 
 .project-pic.two {
-    background: url('../pic/index/project-2.jpg') 50%/cover no-repeat;
+    background: url('../pic/index/project-2.webp') 50%/cover no-repeat;
 }
 
 .project-pic.three {
-    background: url('../pic/index/project-3.JPG') 50%/cover no-repeat;
+    background: url('../pic/index/project-3.webp') 50%/cover no-repeat;
 }
 
 .project-pic.four {
-    background: url('../pic/index/project-4.JPG') 50%/cover no-repeat;
+    background: url('../pic/index/project-4.webp') 50%/cover no-repeat;
 }
 
 .project-content {

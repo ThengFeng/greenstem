@@ -14,7 +14,9 @@
 
     <!--Custom Css-->
     <link rel="stylesheet" href="/source/style.css">
+    <link rel="stylesheet" href="/source/contact-us.css">
     <link rel="stylesheet" href="/source/device.css">
+
 </head>
 
 <body class="contact-us">

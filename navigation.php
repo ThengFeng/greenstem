@@ -1,6 +1,4 @@
-<?php
-
-echo '<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
 <div class="container-fluid">
     <a class="navbar-brand excludeHover" href="/index.php">
         <img src="/pic/icon.webp" alt="greenstem logo">
@@ -158,6 +156,4 @@ echo '<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
         </ul>
     </div>
 </div>
-</nav>'; 
-
-?>
+</nav>
