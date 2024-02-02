@@ -117,7 +117,7 @@
         </div>
     </div>
     <div class="content container-fluid">
-        <img src="/pic/contact_us/contact-us-bg.svg" class='contact-us-bg'>
+        <img src="/pic/contact_us/contact-us-bg.svg" class='contact-us-bg' alt="background">
         <div class="content-title">
             <h3>Get in Touch Right Now!</h3>
             <pre>
@@ -150,7 +150,7 @@
             </div>
 
             <div class="contact-us-icon">
-                <img src="/pic/contact_us/contact-us-animate.svg" alt="">
+                <img src="/pic/contact_us/contact-us-animate.svg" alt="icon">
             </div>
 
         </div>

@@ -66,7 +66,7 @@
         <div class="product-features">
             <div class="features-container">
                 <div class="feature-img">
-                    <img src="/pic/product/feature-bg.jpg" alt="">
+                    <img src="/pic/product/feature-bg.jpg" alt="background effect">
                     <div class="features color2 feature1 left">Keep Track of Service <br> Record for Each Vehicle</div>
                     <div class="features color1 feature2 right">Reminder Letter for Service</div>
                     <div class="features color1 feature3 left">Daily Profit on Each Bill </div>

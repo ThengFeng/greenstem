@@ -88,7 +88,7 @@
                 <div class="value-inner-container ">
                     <div class="value-element expertise animation">
                         <div class="value-icon">
-                            <img src="/pic/about_us/expertise.svg" alt="">
+                            <img src="/pic/about_us/expertise.svg" alt="icon">
                         </div>
                         <div class="value-desc">
                             <span>Expertise</span>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="value-element accountability animation">
                         <div class="value-icon">
-                            <img src="/pic/about_us/accountability.svg" alt="">
+                            <img src="/pic/about_us/accountability.svg" alt="icon">
                         </div>
                         <div class="value-desc">
                             <span>Accountability</span>
@@ -110,7 +110,7 @@
                 <div class="value-inner-container">
                     <div class="value-element devotion animation">
                         <div class="value-icon">
-                            <img src="/pic/about_us/devotion.svg" alt="">
+                            <img src="/pic/about_us/devotion.svg" alt="icon">
                         </div>
                         <div class="value-desc">
                             <span>Devotion</span>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="value-element cooperation animation">
                         <div class="value-icon">
-                            <img src="/pic/about_us/cooperation.svg" alt="">
+                            <img src="/pic/about_us/cooperation.svg" alt="icon">
                         </div>
                         <div class="value-desc">
                             <span>Cooperation</span>
@@ -139,7 +139,7 @@
             <div class="timeline-container hover">
                 <div class="timeline-item hover">
                     <h3 class="timeline-notation">1990</h3>
-                    <img src="/pic/about_us/office-pic.webp" alt="" class="timeline-img gallery"
+                    <img src="/pic/about_us/office-pic.webp" alt="office image in 1990" class="timeline-img gallery"
                         data-fancybox="timeline" data-caption="1990">
 
                     <div class="timeline-content">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <img src="/pic/about_us/1990-dos.webp" alt="" class="timeline-img gallery"
+                    <img src="/pic/about_us/1990-dos.webp" alt="Dos-Based System" class="timeline-img gallery"
                         data-fancybox="timeline" data-caption="1991 Dos-Based System">
 
                     <h3 class="timeline-notation">1991</h3>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="timeline-item">
                     <h3 class="timeline-notation">2000</h3>
-                    <img src="/pic/about_us/2000-windows.webp" alt="" class="timeline-img gallery"
+                    <img src="/pic/about_us/2000-windows.webp" alt="Windows-Based System" class="timeline-img gallery"
                         data-fancybox="timeline" data-caption="2000 Windows-Based System">
 
 
@@ -191,7 +191,7 @@
                 </div>
                 <div class="timeline-item">
                     <h3 class="timeline-notation">2020</h3>
-                    <img src="/pic/about_us/2020-web.webp" alt="" class="timeline-img gallery"
+                    <img src="/pic/about_us/2020-web.webp" alt="Web-Based System" class="timeline-img gallery"
                         data-fancybox="timeline" data-caption="2020 Web-Based System">
 
 
@@ -286,7 +286,7 @@
                          $imagePath = $galleryPath . "gallery_" . $i . ".jpg"; // Adjust the file extension based on your images
                         ?>
                             <div class="image-container swiper-slide">
-                            <img src="<?php echo $imagePath; ?>" alt="" class="gallery-image">
+                            <img src="<?php echo $imagePath; ?>" alt="gallery" class="gallery-image">
                             </div>
                             <?php } ?>
                  </div>

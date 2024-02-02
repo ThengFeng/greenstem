@@ -84,14 +84,14 @@
             <div class="page">
                 <p class="page-link-header">PAGES</p>
                 <ul>
-                    <li><a href="/index.html"> Home</a></li>
+                    <li><a href="/index.php"> Home</a></li>
                     <li onclick="showDropdown(this)" id="productBtn" class="dbtn">Products
                         <ul class="nested-list" id="productCollapse">
-                            <li><a href="/spare-parts-management.html">Spare Parts Management & Accounting System</a></li>
-                            <li><a href="/workshop.html">Workshop Management System</a></li>
+                            <li><a href="/spare-parts-management.php">Spare Parts Management & Accounting System</a></li>
+                            <li><a href="/workshop.php">Workshop Management System</a></li>
                         </ul>
                     </li>
-                    <li><a href="/about-us.html"> About Us</a></li>
+                    <li><a href="/about-us.php"> About Us</a></li>
                     <li><a href="/career.php">Career</a></li>
                 </ul>
             </div>
@@ -101,79 +101,79 @@
                     <li onclick="showDropdown(this)" id="maintenanceBtn" class="dbtn video">
                         Maintenance
                         <ul class="nested-list" id="maintenanceCollapse">
-                            <li><a href="/video.html?videoPath=Maintenance/Customer.mp4">Customer</a>
+                            <li><a href="/video.php?videoPath=Maintenance/Customer.mp4">Customer</a>
                             </li>
-                            <li><a href="/video.html?videoPath=Maintenance/Stock.mp4">Stock</a></li>
-                            <li><a href="/video.html?videoPath=Maintenance/Supplier.mp4">Supplier</a>
+                            <li><a href="/video.php?videoPath=Maintenance/Stock.mp4">Stock</a></li>
+                            <li><a href="/video.php?videoPath=Maintenance/Supplier.mp4">Supplier</a>
                             </li>
                         </ul>
                     </li>
                     <li class="dbtn video" id="glBtn" onclick="showDropdown(this)">
                         General Ledger
                         <ul class="nested-list" id="glCollapse">
-                            <li><a href="/video.html?videoPath=General Ledger/Bank_Reconciliation.mp4">Bank
+                            <li><a href="/video.php?videoPath=General Ledger/Bank_Reconciliation.mp4">Bank
                                     Reconciliation</a></li>
                             <li><a
-                                    href="/video.html?videoPath=General Ledger/GL-Payment Quick Entry_Latest.mp4">GL-Payment
+                                    href="/video.php?videoPath=General Ledger/GL-Payment Quick Entry_Latest.mp4">GL-Payment
                                     Quick Entry Latest</a></li>
                             <li><a
-                                    href="/video.html?videoPath=General Ledger/GL-Receipt_Quick_Entry.mp4">DO
+                                    href="/video.php?videoPath=General Ledger/GL-Receipt_Quick_Entry.mp4">DO
                                     GL-Receipt Quick Entry</a></li>
-                            <li><a href="/video.html?videoPath=General Ledger/Journal_Entry.mp4">Journal
+                            <li><a href="/video.php?videoPath=General Ledger/Journal_Entry.mp4">Journal
                                     Entry</a></li>
                         </ul>
                     </li>
                     <li class="dbtn video" id="receivableBtn" onclick="showDropdown(this)">
                         Account Receivable
                         <ul class="nested-list" id="receivableCollapse">
-                            <li><a href="/video.html?videoPath=Account Receivable/Delivery_Order.mp4">Delivery
+                            <li><a href="/video.php?videoPath=Account Receivable/Delivery_Order.mp4">Delivery
                                     Order</a></li>
-                            <li><a href="/video.html?videoPath=Account Receivable/Direct_Invoice.mp4">Direct
+                            <li><a href="/video.php?videoPath=Account Receivable/Direct_Invoice.mp4">Direct
                                     Invoice</a></li>
                             <li><a
-                                    href="/video.html?videoPath=Account Receivable/DO-Invoice_Generator.mp4">DO-Invoice
+                                    href="/video.php?videoPath=Account Receivable/DO-Invoice_Generator.mp4">DO-Invoice
                                     Generator</a></li>
-                            <li><a href="/video.html?videoPath=Account Receivable/Invoice_Posting.mp4">Invoice
+                            <li><a href="/video.php?videoPath=Account Receivable/Invoice_Posting.mp4">Invoice
                                     Posting</a></li>
                             <li><a
-                                    href="/video.html?videoPath=Account Receivable/Receivable_Credit_Note.mp4">Receivable
+                                    href="/video.php?videoPath=Account Receivable/Receivable_Credit_Note.mp4">Receivable
                                     Credit Note</a></li>
                             <li><a
-                                    href="/video.html?videoPath=Account Receivable/Receivable_Debit_Note.mp4">Receivable
+                                    href="/video.php?videoPath=Account Receivable/Receivable_Debit_Note.mp4">Receivable
                                     Debit Note</a></li>
                             <li><a
-                                    href="/video.html?videoPath=Account Receivable/Receivable_Receipt.mp4">Receivable
+                                    href="/video.php?videoPath=Account Receivable/Receivable_Receipt.mp4">Receivable
                                     Receipt</a></li>
                             <li><a
-                                    href="/video.html?videoPath=Account Receivable/Receivable_Report.mp4">Receivable
+                                    href="/video.php?videoPath=Account Receivable/Receivable_Report.mp4">Receivable
                                     Report</a></li>
                         </ul>
                     </li>
                     <li class="dbtn video" id="payableBtn" onclick="showDropdown(this)">
                         Account Payable
                         <ul class="nested-list" id="payableCollapse">
-                            <li><a href="/video.html?videoPath=Account Payable/Payable_Credit_Note.mp4">Payable
+                            <li><a href="/video.php?videoPath=Account Payable/Payable_Credit_Note.mp4">Payable
                                     Credit Note</a></li>
-                            <li><a href="/video.html?videoPath=Account Payable/Payable_Debit_Note.mp4">Payable
+                            <li><a href="/video.php?videoPath=Account Payable/Payable_Debit_Note.mp4">Payable
                                     Debit Note</a></li>
-                            <li><a href="/video.html?videoPath=Account Payable/Payable_Invoice.mp4">Payable
+                            <li><a href="/video.php?videoPath=Account Payable/Payable_Invoice.mp4">Payable
                                     Invoice</a></li>
-                            <li><a href="/video.html?videoPath=Account Payable/Payable_Payment.mp4">Payable
+                            <li><a href="/video.php?videoPath=Account Payable/Payable_Payment.mp4">Payable
                                     Payment</a></li>
-                            <li><a href="/video.html?videoPath=Account Payable/Payable_Report.mp4">Payable
+                            <li><a href="/video.php?videoPath=Account Payable/Payable_Report.mp4">Payable
                                     Report</a></li>
                         </ul>
                     </li>
                     <li class="dbtn video" id="inventoryBtn" onclick="showDropdown(this)">
                         Inventory
                         <ul class="nested-list" id="inventoryCollapse">
-                            <li><a href="/video.html?videoPath=Inventory/Direct_Purchase.mp4">Direct
+                            <li><a href="/video.php?videoPath=Inventory/Direct_Purchase.mp4">Direct
                                     Purchase</a></li>
-                            <li><a href="/video.html?videoPath=Inventory/Purchase_Return.mp4">Purchase
+                            <li><a href="/video.php?videoPath=Inventory/Purchase_Return.mp4">Purchase
                                     Return</a></li>
-                            <li><a href="/video.html?videoPath=Inventory/Stock_Check_Entry.mp4">Stock
+                            <li><a href="/video.php?videoPath=Inventory/Stock_Check_Entry.mp4">Stock
                                     Check Entry</a></li>
-                            <li><a href="/video.html?videoPath=Inventory/Stock_Check_Transaction.mp4">Stock
+                            <li><a href="/video.php?videoPath=Inventory/Stock_Check_Transaction.mp4">Stock
                                     Check Transaction</a></li>
                         </ul>
                     </li>
@@ -181,7 +181,7 @@
                         Workshop
                         <ul class="nested-list" id="workshopCollapse">
                             <li><a
-                                    href="/video.html?videoPath=Workshop/Register No Training Video Enhanced vers.mp4">Register
+                                    href="/video.php?videoPath=Workshop/Register No Training Video Enhanced vers.mp4">Register
                                     No Training Video Enhanced vers</a></li>
                         </ul>
                     </li>
